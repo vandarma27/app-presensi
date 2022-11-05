@@ -53,6 +53,24 @@ router.put('/', async (req, res) => {
     }
 })
 
+router.post('/login', async (req,res) => {
+    const {nip , password} = req.body
+    const users = await UsersModel.findOne({whare : {nip : nip}})
+    const compare = await bcrypt.compare(password, userData.password)
+
+    if (compare === true){
+        res.status(200).json({
+            users: "",
+            metadata : "login success"
+        })
+    } else {
+        res.status(400).json({
+            error : "data invalid"
+        })
+    }
+
+})
+
 
 
 module.exports = router
