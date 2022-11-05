@@ -6,7 +6,7 @@ const UsersModel = require('../models/users')
 router.get('/', async (req, res) => {
     const users = await UsersModel.findAll()
     res.status(200).json({
-        data: "VanDarma27",
+        data: users,
         metadata: "test user endpoints"
     })
 })
