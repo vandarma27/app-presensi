@@ -1,0 +1,35 @@
+{
+  "name": "app-presensi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vandarma27/app-presensi.git"
+  },
+  "keywords": [
+    "express",
+    "js",
+    "rest",
+    "api"
+  ],
+  "author": "VanDarma27",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vandarma27/app-presensi/issues"
+  },
+  "homepage": "https://github.com/vandarma27/app-presensi#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.25.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
