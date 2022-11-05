@@ -23,7 +23,7 @@ router.post('/checkin', async (req, res) => {
 
     res.status(200).json({
         data: absensi,
-        metadata: "test absensi in endpoints"
+        metadata: "checkin berhasil"
     })
 })
 
@@ -36,7 +36,7 @@ router.post('/checkout', async (req, res) => {
     
     res.status(200).json({
         data: absensi,
-        metadata: "test absensi out endpoints"
+        metadata: "checkout berhasil"
     })
 })
 
