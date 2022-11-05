@@ -9,6 +9,6 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.use('/', userEndpoint)
+app.use('/users', userEndpoint)
 
 app.listen(port, () => console.log(`running server on port ${port}`))
